@@ -1,0 +1,203 @@
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: row;
+        padding: 3rem 2rem;
+        gap: 1rem;
+        transition: .6s;
+    }
+
+    .header .menu li a {
+        padding: 1rem;
+    }
+
+    .home-section .informacoes {
+        padding: 3rem;
+    }
+
+    .home-section .informacoes img {
+        max-width: 100px;
+    }
+
+    .home-section .informacoes .titulo {
+        font-size: 2rem;
+        transition: .6s;
+    }
+
+    #btnCart{
+        right: 45px;
+    }
+}
+
+@media (max-width: 768px){
+    .btn-alugar{
+        width: 100%;
+    }
+
+    #btnTop {
+        bottom: 45px;
+        right: 45px;
+        transition: .6s;
+    }
+
+    #btnCart{
+        right: 45px;
+    }
+
+    .cartPopUp  {
+        width: 70vw;
+        top: 6rem;
+    }
+
+    .cartItem{
+        padding: 1rem 0.5rem;
+    }
+
+    .cartItem .cartInfo{
+        flex-direction: column;
+    }
+
+    .cartItem .cartInfo img{
+        width: 9rem;
+    }
+
+    .cartItem .cartInfo .info{
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        padding: 1rem 2rem;
+    }
+
+    .footer-infos{
+        flex-direction: column;
+    }
+
+    footer .info{
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+
+    footer .menu, .payments, .contact{
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 440px){
+    .header {
+        padding: 3rem 1.8rem;
+        transition: .6s;
+    }
+    .header .menu{
+        gap: 0.2rem;
+        transition: .6s;
+    }
+    .header .menu li a{
+        padding: 2.5rem 0.6rem;
+        font-size: 0.8rem;
+        transition: .6s;
+    }
+    
+    .header .logo img{
+        width: 2rem;
+        transition: .6s;
+    }
+
+    .btn-alugar{
+        font-size: 1.2rem;
+    }
+
+    .home-section::after{
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4) 60%, transparent 80%);
+    }
+    .home-section .informacoes .texto {
+        font-size: 0.8rem;
+        transition: .6s;
+    }
+
+    .section-title{
+        font-size: 2.5rem;
+        transition: .6s;
+    }
+    
+    .games-section, .consoles-section{
+        margin: 5rem 1rem;
+    }
+
+    .game .game-img, .console .console-img {
+        width: 11rem;
+        transition: .6s;
+    }
+
+    #btnTop {
+        bottom: 40px;
+        right: 20px;
+        transition: .6s;
+    }
+
+    #btnCart{
+        right: 20px;
+        transition: .6s;
+    }
+
+    .cartItem .cartInfo img{
+        width: 7rem;
+    }
+
+    .cartPopUp  {
+        width: 88vw;
+    }
+
+    footer{
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media (max-width: 248px){
+    .header {
+        padding: 3rem 1rem;
+        transition: .6s;
+    }
+
+    .header .logo img{
+        width: 1.6rem;
+        transition: .6s;
+    }
+
+    .header .menu li a{
+        padding: 2.5rem 0.6rem;
+        font-size: 0.6rem;
+        transition: .6s;
+    }
+
+    .btn-alugar{
+        font-size: 1rem;
+    }
+
+    .games-section, .consoles-section{
+        margin: 2rem 0.2rem;
+    }
+
+    .game .game-img, .console .console-img {
+        width: 9rem;
+        transition: .6s;
+    }
+
+    .cartPopUp  {
+        width: 99vw;
+    }
+
+    .cartPopUp .btnFinishCart{
+        font-size: 1rem;
+    }
+
+    footer{
+        padding: 1rem 1rem;
+    }
+}
+
+@media (max-width: 248px){
+
+}

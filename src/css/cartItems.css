@@ -1,0 +1,143 @@
+.cartPopUp {
+    top: 5rem;
+    left: 100%;
+    width: 50vw;
+    height: 100vh;
+
+    background-color: var(--primary-color);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    
+    padding: 2rem 1.2rem 5rem 1.2rem;
+    overflow-y: visible;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.cartPopUp.show {
+    transform: translateX(-100%);
+}
+
+.cartPopUp.hide {
+    transform: translateX(100%);
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 0.7);
+}
+
+.closeCartItems{
+    display: flex;
+
+    margin-bottom: 2rem;
+}
+
+.noItemsInCart{
+    font-family: var(--font-family-2);
+    color: var(--font-color);
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.closeCartItems a{
+    font-size: 2rem;
+    color: var(--font-color);
+    font-weight: bolder;
+
+    cursor: pointer;
+}
+
+.cartItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+
+    background-color: var(--primary-color);
+    border: 1px solid var(--lineDetails-color);
+    border-radius: 10px;
+
+    transition: .6s;
+}
+.cartItem .cartInfo{
+    display: flex;
+}
+.cartItem .cartInfo img{
+    width: 10rem;
+}
+
+.cartItem .cartInfo .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    font-size: 0.8rem;
+    color: var(--font-color);
+}
+
+.info .titleItem{
+    font-family: var(--font-family-1);
+}
+
+.info .valueItem, .statusItem{
+    font-family: var(--font-family-2);
+}
+
+.removeCartItem{
+    font-size: 2rem;
+
+    color: var(--font-color);
+}
+
+.removeCartItem i:hover{
+    cursor: pointer;
+}
+
+hr{
+    margin: 1rem 0.7rem;
+
+    border-color: var(--font-color);
+}
+
+p{
+    font-size: 1rem;
+    color: var(--font-color);
+    margin: 0.7rem 0;
+}
+
+#hoursToHire{
+    outline: none;
+    font-size: 1rem;
+    width: 14rem;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+.btnFinishCart{
+    width: 100%;
+    padding: 1rem 2rem;
+
+    background-color: rgba(255, 255, 255, .1);
+    border: 0.5px solid var(--font-color);
+    border-radius: 4px;
+
+    font-family: var(--font-family-1);
+    font-size: 1.5rem;
+    color: var(--font-color);
+    text-align: center;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: .6s;
+}
+
+.btnFinishCart:hover{
+    background-color: var(--font-color);
+    color: var(--primary-color);
+}

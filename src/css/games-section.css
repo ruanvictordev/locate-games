@@ -1,0 +1,153 @@
+.games-section {
+    background-color: var(--primary-color);
+    margin: 7rem 3rem;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--font-family-1);
+    margin: 0;
+}
+
+.back-title {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    margin: 0;
+    position: relative;
+    right: 22px;
+    bottom: 27px;
+    color: transparent;
+    text-shadow: 1px 1px 1px var(--lineDetails-color);
+
+    font-size: 6rem;
+}
+
+.front-title {
+    position: absolute;
+    font-size: 5rem;
+}
+.games{
+    display: grid;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;  
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr)); 
+    gap: 5rem; 
+
+    transition: .6s;
+}
+
+.itensFilter{
+    display: flex;
+    justify-content: center;
+
+    margin: 1.8rem 0 2.5rem;
+    flex-wrap: wrap;
+}
+
+.itensFilter .btnFilter{
+    background-color: rgba(255, 255, 255, .1);
+    border: 0.5px solid #fff;
+    border-radius: 20px;
+    color: var(--font-color);
+    font-size: 0.7rem;
+
+    margin: 0.3rem 0.5rem;
+    padding: 0.5rem 1rem;
+
+    cursor: pointer;
+}
+
+.itensFilter .btnFilter.active{
+    background-color: var(--font-color);
+    border: 0.5px solid var(--font-color);
+    color: var(--primary-color);
+}
+
+.itensFilter .btnFilter:hover{
+    background-color: var(--font-color);
+    border: 0.5px solid var(--font-color);
+    color: var(--primary-color);
+
+    transition: .6s;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    box-sizing: border-box;
+
+    background-color: var(--secondary-color);
+    border: 1px solid var(--lineDetails-color);
+    border-radius: 5px;
+    padding: 1rem 3rem;
+}
+
+.game:hover{
+    background-color: var(--lineDetails-color);
+    border: 1px solid var(--secondary-color);
+    cursor: pointer;
+    transition: .6s;
+}
+
+.game:hover .game-img{
+    transform: translateY(-20px); /* Move a imagem 20px para cima */
+    transition: transform .8s ease-in-out;
+}
+
+.game-title{
+    margin: 0;
+    text-align: center;
+    font-family: var(--font-family-1);
+}
+
+.game-status{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0.2rem 0.3rem;
+}
+.game-status span{
+    width: 10px;
+    height: 10px;
+    
+    border-radius: 100%;
+    margin-right: 0.3rem;
+}
+
+.disponivel{
+    background-color: rgba(5, 155, 0, 0.384);
+}
+
+.disponivel span{
+    background-color: rgb(5, 155, 0);
+}
+
+.indisponivel{
+    background-color: rgba(155, 0, 0, 0.384);
+}
+
+.indisponivel span{
+    background-color: rgb(155, 0, 0);
+}
+
+.game .game-img{
+    position: relative;
+    width: 15rem;
+    z-index: 1;
+}
+
+.game .btn-game{
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+}

@@ -1,0 +1,59 @@
+footer{
+    margin-top: 3rem;
+    padding: 1rem 7rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semitransparente */
+    backdrop-filter: blur(3px); /* Intensidade do blur */
+    -webkit-backdrop-filter: blur(3px); /* Suporte para navegadores baseados em WebKit */
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+
+    font-size: 1.3rem;
+}
+
+.footer-infos{
+    display: flex;
+    margin: 2rem 0;
+}
+
+footer p{
+    font-size: 1.2rem;
+}
+
+footer .logo img{
+    width: 3rem;
+}
+
+footer .footer-infos .logo{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .credits{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+footer .footer-infos{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .info{
+    display: flex;
+    flex-direction: row;
+}
+
+footer .menu, .payments, .contact{
+    display: flex;
+    flex-direction: column;
+    margin: 0 3rem;
+    justify-content: space-between;
+}
+
+footer .menu h2, .payments h2, .contact h2{
+    margin-bottom: 1rem;
+}
+
+footer .menu a, .payments a, .contact a{
+    margin-bottom: 0.5rem;
+}

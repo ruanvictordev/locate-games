@@ -1,0 +1,69 @@
+.home-section {
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+
+.home-section::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 40%, transparent 75%);
+}
+
+.home-section .imagem-fundo {
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+.home-section .imagem-fundo.hidden {
+    opacity: 0;
+}
+
+.home-section .informacoes {
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 80px 80px 80px 170px;
+    max-width: 780px;
+}
+
+.home-section .informacoes .titulo {
+    font-family: var(--font-family-1);
+    font-size: 55px;
+    margin: 0;
+}
+
+.home-section .informacoes .texto {
+    font-family: var(--font-family-2);
+    font-size: 18px;
+    line-height: 1.6;
+
+}
+
+.btn-alugar{
+    background-color: rgba(255, 255, 255, .1);
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    font-family: var(--font-family-1);
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    width: 50%;
+
+    transition: .6s;
+}
+
+.btn-alugar:hover {
+    background-color: #fff;
+    color: #000
+}
